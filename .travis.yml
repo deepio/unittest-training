@@ -1,12 +1,9 @@
 language: python
+cache: pip
 matrix:
   include:
     - os: linux
       python: 3.6
-    - os: linux
-      python: 3.5
-    - os: linux
-      python: 3.4
 before_install:
   - yarn install
 script:
@@ -15,3 +12,4 @@ script:
   - py.test
   - py.test --doctest-module ./src/main.py
   - yarn test
+after_script:
