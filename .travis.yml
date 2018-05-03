@@ -1,0 +1,11 @@
+language: python
+matrix:
+  include:
+    - os: linux
+      python: 3.6
+    - os: osx
+      python: 3.6
+before_install:
+  - yarn install
+  - chmod +x ./run_all_tests.sh
+script: ./run_all_tests.sh
