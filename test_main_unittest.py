@@ -1,5 +1,5 @@
 import unittest
-from main import sum
+from main_doctest import sum
 import difflib
 
 
