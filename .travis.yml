@@ -1,0 +1,15 @@
+language: python
+cache: pip
+matrix:
+  include:
+    - os: linux
+      python: 3.6
+before_install:
+  - yarn install
+script:
+  - python3 ./src/main.py
+  - python3 -m unittest discover
+  - py.test
+  - py.test --doctest-module ./src/main.py
+  - yarn test
+after_script:
