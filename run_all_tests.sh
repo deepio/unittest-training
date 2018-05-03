@@ -7,3 +7,5 @@ echo "py.test Starting..."
 py.test
 echo "DocTest with py.test Starting..."
 py.test --doctest-module main_doctest.py
+echo "Jest is Starting..."
+yarn test
