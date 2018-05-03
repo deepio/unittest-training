@@ -10,7 +10,7 @@ def sum(a, b):
 	>>> sum('a', 4)
 	Traceback (most recent call last):
 	...
-	TypeError: cannot concatenate 'str' and 'int' objects
+	TypeError: must be str, not int
 	"""
 	return a + b
 
