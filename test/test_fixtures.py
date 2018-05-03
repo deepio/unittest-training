@@ -1,4 +1,10 @@
-import pytest
+import unittest, pytest, sys
+
+class MyTestCase(unittest.TestCase):
+		@unittest.skipUnless(sys.platform.startswith("win"), "requires Windows")
+		def test_windows_support(self):
+		    # windows specific testing code
+		    pass
 
 @pytest.fixture(scope='module')
 def resource_a_setup(request):
