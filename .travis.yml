@@ -13,3 +13,7 @@ script:
   - py.test --doctest-module ./src/main.py
   - yarn test
 after_script:
+notifications:
+  email: false
+  slack:
+    secure: Laq6NVnsKh3qUis2XrPXt7NW4XBwILrNLgBulJ6w5/lG1F+i9JZTsmJzHOuBNlZubfppY3Gyuw9Z4u+lrycUgJAn432HMoDbqkiQnkmjo4RXtxmFpu/67vaSaW9/QO4NBv9fkDLxRdFXrO18buR6eJCcgPqzYycPZZJmYOxzMVH/bkO/QbB2Z7L17mgWtCMaW4G6ygqnQKRS0TYFRI/JzgvZPoBDo0ExcSQLZUClMHn0sWH/tE1uETCfTybsUM8ylTGjNOfIwCjzwZE1oQI0C2B6MFt7suLAtKnEJSJ7z29/4xv0UDZD4jjsipUD8/vww+fk5QBRDUcuN1V3c9q3obIqogVRE58JgO/AmQZZiTi5LuzUi2KrRAUrwDAhWTQ4/+ondu3edbT4HQCAqHndlfBLBu4ZUAtpzOP8s6xhr7CRpkemWbrk7zdqLSwCLiomYbE3INBuWvU/1KhauymsfYWEQUx2oN91hEJhuEqSW3MW72HrWu4z2H0JRBgRqKIOrIQLuSAusVIx0l9IorKmHzB+mPx1L1GAjtNegs/xh/uVcJErpZ41ce/mK9iocNzigB4Al26+IeaK+SP8I2r5tuAQ0L975JPo0yfXkXYe3dIUlSol6YHtaHkx1B26UDmylZzkMCxASrFG42YdO8QWWuHAc/12/ToxkzoVukMZa64=
